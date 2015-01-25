@@ -8,7 +8,7 @@ This repositoy has following files as deliverables
 1. ReadMe.md
 2. CodeBook.md
 3. run_analysis.R
-4. Tidy_Data.csv
+4. Tidy_Data.txt
 
 ##Data Source
 
@@ -32,7 +32,7 @@ To create a Tidy dataset using following points
 
 Please refer to *CodeBook.md* for details of cleaning steps.
 
-And refer to *Tidy_Data.csv* for tidy data set.
+And refer to *Tidy_Data.txt* for tidy data set.
 
 
 Data Source License:

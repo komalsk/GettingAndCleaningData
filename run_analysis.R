@@ -1,3 +1,5 @@
+library(reshape)
+
 ##Funtion for reading file (if present)
 readFile <- function (filename) {
   if (!file.exists(filename))
@@ -70,4 +72,4 @@ colnames(dt_cumulative_data) <- c(as.character(dt_features_clean[sapply(dt_featu
 melt_data <- melt(dt_cumulative_data, id=c("ActivityName","SubjectID"))
 final_tidy_dataset <- cast(melt_data, SubjectID + ActivityName ~ variable, mean)
 
-write.csv(final_tidy_dataset, file = "Tidy_Data.csv", row.names=FALSE)
+write.table(final_tidy_dataset, file = "Tidy_Data.txt", row.names=FALSE)
